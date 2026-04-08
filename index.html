@@ -5,26 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LifeGuardAPP | Comunicación y geolocalización en emergencias</title>
+  <meta name="description"
+    content="LifeGuardAPP ayuda a comunicar, ubicar y orientar a personas, familias y comunidades antes, durante y después de una emergencia." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a href="#inicio" class="brand">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio de LifeGuardAPP">
         <div class="brand-icon">
-          <img src="images/LogoLifeGuard.png" alt="Logo LifeGuardAPP" />
+          <img src="images/LogoLifeGuard.png" alt="Logo de LifeGuardAPP" />
         </div>
-        <div>
-          <p class="brand-title">LifeGuard<span>APP</span></p>
-        </div>
+        <p class="brand-title">LifeGuard<span>APP</span></p>
       </a>
 
-      <nav class="nav-links" aria-label="Navegación principal">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú de navegación">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
         <a href="#sobre">Sobre la app</a>
         <a href="#funciones">Funciones</a>
+        <a href="#galeria">Galería</a>
         <a href="#impacto">Impacto</a>
-        <a href="#descarga">Descarga</a>
         <a href="#contacto" class="btn btn-primary">Conocer más</a>
       </nav>
     </div>
@@ -34,15 +38,12 @@
     <section class="hero" id="inicio">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Comunicación segura incluso en momentos críticos</div>
-          <h1>
-            La app que ayuda a <span>conectar, ubicar y orientar</span> en situaciones de emergencia
-          </h1>
+          <p class="eyebrow">Comunicación segura incluso en momentos críticos</p>
+          <h1>La app que ayuda a <span>conectar, ubicar y orientar</span> en emergencias.</h1>
           <p>
-            LifeGuardAPP es una aplicación móvil multiplataforma pensada para brindar asistencia antes, durante y
-            después de una emergencia. Su propuesta integra comunicación descentralizada, geolocalización, alertas
-            verificadas y contenido educativo para que las personas, sus familias y las comunidades puedan actuar con
-            mayor claridad, rapidez y confianza.
+            LifeGuardAPP es una aplicación móvil pensada para brindar asistencia antes, durante y después de una
+            emergencia. Integra comunicación P2P, geolocalización, alertas y educación preventiva para que las personas
+            puedan actuar con mayor claridad, rapidez y confianza.
           </p>
 
           <div class="hero-actions">
@@ -51,233 +52,155 @@
           </div>
 
           <div class="hero-cards">
-            <div class="mini-card">
-              <strong>Comunicación descentralizada</strong>
-              <span>Reduce la dependencia de redes tradicionales cuando la infraestructura falla.</span>
-            </div>
-            <div class="mini-card">
-              <strong>Ubicación y apoyo</strong>
-              <span>Facilita compartir la ubicación con contactos autorizados y mejorar la coordinación.</span>
-            </div>
-            <div class="mini-card">
-              <strong>Prevención y autocuidado</strong>
-              <span>Integra orientación educativa para actuar mejor ante diferentes escenarios.</span>
-            </div>
+            <article class="mini-card">
+              <h3>Comunicación descentralizada</h3>
+              <p>Reduce la dependencia de redes tradicionales cuando la infraestructura falla.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Ubicación y apoyo</h3>
+              <p>Comparte ubicación con contactos autorizados y mejora la coordinación en campo.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Prevención y autocuidado</h3>
+              <p>Incluye protocolos claros para responder mejor en diferentes escenarios.</p>
+            </article>
           </div>
         </div>
 
-        <div class="visual-shell">
-          <div class="glow"></div>
-          <div class="visual-card">
-            <div class="visual-stage">
-              <div class="mascot-placeholder">
-                <div class="mascot-frame">
-                  <img src="images/lucyMain.png" alt="Mascota luciérnaga guía de LifeGuardAPP" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="floating-card float-a">
-            <div class="bubble">
-              <div class="inner">
-                <strong>Antes, durante y después</strong>
-                <p>La propuesta está pensada para apoyar la preparación, la respuesta y la recuperación ante emergencias.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="floating-card float-b">
-            <div class="bubble">
-              <div class="inner">
-                <strong>Usuarios, familias y comunidades</strong>
-                <p>La app busca fortalecer la resiliencia comunitaria y la coordinación con equipos de emergencia.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="floating-card float-c">
-            <div class="bubble">
-              <div class="inner">
-                <strong>Diseño para el usuario</strong>
-                <p>Esta maqueta está enfocada en una página informativa y comercial para presentar el valor de
-                  LifeGuardAPP.</p>
-              </div>
-            </div>
-          </div>
+        <div class="hero-visual">
+          <div class="hero-spotlight"></div>
+          <figure class="mascot-card">
+            <img src="images/lucyMain.png" alt="Lucy, guía de LifeGuardAPP" class="image-cover mascot-main" />
+          </figure>
+          <article class="floating-note floating-note-a">
+            <h3>Antes, durante y después</h3>
+            <p>LifeGuardAPP acompaña todo el ciclo de emergencia con herramientas prácticas.</p>
+          </article>
+          <article class="floating-note floating-note-b">
+            <h3>Enfoque comunitario</h3>
+            <p>Mejora la coordinación entre personas, familias, comunidades y equipos de apoyo.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="sobre">
       <div class="container grid-2">
-        <div class="story">
+        <article class="story card">
           <h2>¿Qué es LifeGuardAPP?</h2>
           <p>
-            LifeGuardAPP nace como respuesta a un problema crítico: cuando ocurre un desastre, la caída o saturación de
-            las redes convencionales dificulta pedir ayuda, coordinar rescates y mantener contacto con seres queridos.
-            La aplicación busca cerrar esa brecha con un enfoque integral que combina tecnología, acompañamiento y
-            cultura de prevención.
+            LifeGuardAPP nace para resolver un problema crítico: cuando ocurre un desastre, la saturación de redes
+            dificulta pedir ayuda y coordinar acciones. Por eso, combina tecnología, acompañamiento y cultura de
+            prevención para mejorar la respuesta en contextos reales.
           </p>
-        </div>
+        </article>
 
-        <div class="card feature-hero">
-          <h3>Una solución pensada para contextos reales</h3>
-          <p>
-            En escenarios de sismos, inundaciones, huracanes u otras emergencias, LifeGuardAPP propone una alternativa
-            que disminuye la dependencia de infraestructuras centralizadas y ayuda a compartir información útil, clara y
-            confiable para actuar mejor.
-          </p>
+        <article class="card feature-hero">
+          <h3>Una solución pensada para escenarios reales</h3>
           <div class="check-list">
             <div class="check"><span>✓</span>
-              <div>Ayuda a mantener contacto cuando la conectividad tradicional falla.</div>
+              <p>Mantiene contacto cuando la conectividad convencional falla.</p>
             </div>
             <div class="check"><span>✓</span>
-              <div>Promueve una mejor coordinación entre usuarios, contactos y autoridades.</div>
+              <p>Favorece mejor coordinación entre usuarios, familiares y autoridades.</p>
             </div>
             <div class="check"><span>✓</span>
-              <div>Refuerza la cultura del autocuidado con educación y protocolos de actuación.</div>
+              <p>Refuerza el autocuidado con educación y protocolos accionables.</p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="section" id="funciones">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2>Funciones principales de la aplicación</h2>
-          <p>
-            La propuesta de LifeGuardAPP integra en una sola experiencia funciones que normalmente se encuentran
-            separadas: comunicación, localización, alertas y educación preventiva.
-          </p>
-        </div>
+          <p>Todo en una sola experiencia: comunicación, geolocalización, alertas y orientación preventiva.</p>
+        </header>
 
         <div class="grid-4">
           <article class="card">
-            <h4>Comunicación P2P y redes mesh</h4>
-            <p>Permite comunicación directa entre dispositivos cercanos sin depender por completo de estaciones base o
-              Internet tradicional.</p>
+            <h3>Comunicación P2P y red mesh</h3>
+            <p>Conecta dispositivos cercanos para disminuir dependencia de infraestructura central.</p>
           </article>
-
           <article class="card">
-            <h4>Geolocalización</h4>
-            <p>Facilita obtener y compartir la última ubicación disponible, apoyándose en mapas y datos almacenados para
-              escenarios sin conexión.</p>
+            <h3>Geolocalización útil</h3>
+            <p>Comparte ubicación para apoyar búsqueda, coordinación y toma de decisiones.</p>
           </article>
-
           <article class="card">
-            <h4>Boton SOS</h4>
-            <p>Integra un botón de emergencia que permite enviar alertas de forma rápida y sencilla.</p>
+            <h3>Botón SOS</h3>
+            <p>Envía alertas rápidas con información clave para facilitar respuesta oportuna.</p>
           </article>
-
           <article class="card">
-            <h4>Módulo educativo</h4>
-            <p>Ofrece protocolos antes, durante y después de la emergencia, adaptados al contexto y con foco en
-              prevención y autocuidado.</p>
+            <h3>Módulo educativo</h3>
+            <p>Incluye guías antes, durante y después de una emergencia con enfoque práctico.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-2">
-        <div class="card">
-          <div class="section-header" style="text-align:left; margin-bottom:18px;">
-            <h2>¿Para quién está pensada?</h2>
-            <p>El proyecto contempla distintos actores que se benefician de una mejor comunicación y coordinación en
-              emergencias.</p>
-          </div>
-
-          <div class="audience-list">
-            <div class="audience-item">
-              <div>
-                <h4>Usuarios</h4>
-                <p>Pueden comunicarse, compartir ubicación y acceder a orientación clara cuando más lo necesitan.</p>
-              </div>
-            </div>
-
-            <div class="audience-item">
-              <div>
-                <h4>Familias y contactos de confianza</h4>
-                <p>Reciben información útil para reducir incertidumbre y apoyar la toma de decisiones.</p>
-              </div>
-            </div>
-
-            <div class="audience-item">
-              <div>
-                <h4>Equipos de emergencia</h4>
-                <p>Obtienen información georreferenciada y mejor contexto para priorizar casos y organizar la respuesta.
-                </p>
-              </div>
-            </div>
-
-            <div class="audience-item">
-              <div>
-                <h4>Comunidades y organizaciones</h4>
-                <p>Fortalecen redes de apoyo mutuo en colegios, empresas, conjuntos residenciales y otros entornos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card feature-hero">
-          <div class="section-header" style="text-align:left; margin-bottom:18px;">
-            <h2>¿Qué valor ofrece?</h2>
-            <p>Más que una app, busca convertirse en una herramienta que acompaña, conecta y empodera a las personas.
-            </p>
-          </div>
+    <section class="section" id="galeria">
+      <div class="container gallery-layout">
+        <div>
+          <header class="section-header section-header-left">
+            <h2>Descubre LifeGuardAPP por dentro</h2>
+            <p>Visualiza la experiencia en formato móvil con un mockup vertical y capturas destacadas.</p>
+          </header>
 
           <div class="check-list">
             <div class="check"><span>✓</span>
-              <div><strong>En la dimensión biológica:</strong> ayuda a proteger la vida al facilitar localización y
-                respuesta más oportuna.</div>
+              <p>Interfaz amigable para actuar rápido cuando cada segundo cuenta.</p>
             </div>
             <div class="check"><span>✓</span>
-              <div><strong>En la dimensión psicológica:</strong> disminuye angustia e incertidumbre gracias al contacto
-                y la información validada.</div>
+              <p>Diseño visual centrado en claridad y prioridad de información.</p>
             </div>
             <div class="check"><span>✓</span>
-              <div><strong>En la dimensión social:</strong> fortalece los lazos de apoyo entre personas, familias y
-                comunidades.</div>
+              <p>Lucy acompaña el recorrido para orientar al usuario paso a paso.</p>
             </div>
-            <div class="check"><span>✓</span>
-              <div><strong>En la dimensión cultural:</strong> adapta mensajes y protocolos a realidades y costumbres
-                locales.</div>
-            </div>
-            <img src="images/LucyRiesgos.png" alt="Lucy, la luciérnaga guía de LifeGuardAPP, con un mensaje de valor" style="height: 300px; border-radius:18px; margin-left: 150px;" />
           </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="images/LucyRiesgos.png" alt="Lucy explicando riesgos y recomendaciones" class="image-cover" />
+              <figcaption>Consejos y riesgos</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/LucySentada.png" alt="Lucy como guía de apoyo dentro de la app" class="image-cover" />
+              <figcaption>Asistencia guiada</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="phone-block" aria-label="Carrusel de mockups verticales de la app">
+          <div class="phone-frame">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen" id="phoneCarousel" role="region" aria-live="polite"></div>
+          </div>
+          <div class="phone-controls" id="phoneDots"></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="impacto">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2>Impacto esperado</h2>
-          <p>
-            El proyecto plantea una transformación del contexto de emergencia: pasar del aislamiento, la desinformación
-            y la improvisación, a una respuesta más coordinada, resiliente y orientada por información útil.
-          </p>
-        </div>
+          <p>Pasar del aislamiento y la improvisación a una respuesta más coordinada, resiliente y humana.</p>
+        </header>
 
         <div class="grid-3">
           <article class="card">
-            <h4>Más coordinación</h4>
-            <p>Al mantener comunicación entre usuarios cercanos y contactos autorizados, se facilita la cooperación
-              comunitaria y la asistencia temprana.</p>
+            <h3>Más coordinación</h3>
+            <p>Mejora cooperación comunitaria y asistencia temprana entre usuarios y contactos.</p>
           </article>
-
           <article class="card">
-            <h4>Más orientación</h4>
-            <p>La combinación de mapas, alertas y contenidos educativos ayuda a actuar con mayor serenidad y menos
-              improvisación.</p>
+            <h3>Más orientación</h3>
+            <p>Mapas, alertas y contenidos educativos para decidir mejor con menos incertidumbre.</p>
           </article>
-
           <article class="card">
-            <h4>Más resiliencia</h4>
-            <p>La aplicación busca cultivar confianza, autocuidado y preparación en individuos, familias y
-              organizaciones.</p>
+            <h3>Más resiliencia</h3>
+            <p>Fortalece cultura de prevención, autocuidado y preparación colectiva.</p>
           </article>
         </div>
       </div>
@@ -285,232 +208,57 @@
 
     <section class="section" id="descarga">
       <div class="container grid-2">
-        <div class="card feature-hero">
-          <div class="section-header" style="text-align:left; margin-bottom:18px;">
+        <article class="card feature-hero">
+          <header class="section-header section-header-left">
             <h2>Descarga LifeGuardAPP</h2>
-            <p>Accede a la aplicación y comienza a explorar una herramienta pensada para acompañarte con comunicación,
-              localización y orientación en situaciones de emergencia.</p>
-          </div>
-
-          <div class="check-list">
-            <div class="check"><span>✓</span>
-              <div><strong>Versión Android (APK):</strong> descarga directa para pruebas, pilotos o distribución
-                controlada.</div>
-            </div>
-            <div class="check"><span>✓</span>
-              <div><strong>Instalación simple:</strong> ideal para demostraciones, entornos académicos y presentaciones
-                del proyecto.</div>
-            </div>
-            <div class="check"><span>✓</span>
-              <div><strong>Preparada para escalar:</strong> la página puede adaptarse más adelante para App Store y
-                Google Play.</div>
-            </div>
-          </div>
-
-          <div class="hero-actions" style="margin-top:22px;">
+            <p>Accede a la app y empieza a explorar una herramienta diseñada para emergencias reales.</p>
+          </header>
+          <div class="hero-actions">
             <a href="#" class="btn btn-primary">Descargar APK</a>
             <a href="#" class="btn btn-secondary">Ver instrucciones</a>
           </div>
-        </div>
+        </article>
 
-        <div class="metric-panel">
-          <div class="section-header" style="text-align:left; margin-bottom:8px;">
-            <h2>¿Qué incluye la experiencia?</h2>
-            <p>Una propuesta pensada para comunicar mejor el valor de la app y darle una identidad visual más memorable.
-            </p>
+        <aside class="metric-panel">
+          <h3>¿Qué incluye?</h3>
+          <div class="highlight-grid">
+            <div class="highlight"><strong>P2P</strong><span>Conexión entre dispositivos cercanos.</span></div>
+            <div class="highlight"><strong>Geo</strong><span>Ubicación útil para coordinar ayuda.</span></div>
+            <div class="highlight"><strong>Alertas</strong><span>Mensajes de acción en momentos críticos.</span></div>
+            <div class="highlight"><strong>Soporte</strong><span>Asistencia guiada con Lucy y FAQ.</span></div>
           </div>
-
-          <div class="highlight-grid" style="grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: 8px;">
-            <div class="highlight">
-              <strong>Comunicación P2P</strong>
-              <span>Conexión entre dispositivos cercanos para momentos críticos.</span>
-            </div>
-            <div class="highlight">
-              <strong>Geolocalización</strong>
-              <span>Ubicación útil para apoyar contacto y coordinación.</span>
-            </div>
-            <div class="highlight">
-              <strong>Alertas</strong>
-              <span>Mensajes orientados por información validada y oportuna.</span>
-            </div>
-            <div class="highlight">
-              <strong>Educación</strong>
-              <span>Contenido para prevención, respuesta y autocuidado.</span>
-            </div>
-          </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-   <section class="section">
-  <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
-    
-    <div>
-      <div class="section-header" style="text-align:left; margin-bottom:18px;">
-        <h2>Descubre LifeGuardAPP desde dentro</h2>
-        <p>
-          Explora algunas de las pantallas principales de la aplicación y conoce cómo LifeGuardAPP
-          acompaña a las personas con comunicación, geolocalización, alertas verificadas y una
-          experiencia visual clara para actuar en situaciones de emergencia.
-        </p>
-      </div>
-
-      <div class="check-list">
-        <div class="check">
-          <span>✓</span>
-          <div><strong>Interfaz intuitiva:</strong> pensada para que el usuario encuentre rápidamente lo que necesita.</div>
-        </div>
-        <div class="check">
-          <span>✓</span>
-          <div><strong>Capturas reales:</strong> muestra visualmente cómo se ve la app en uso.</div>
-        </div>
-        <div class="check">
-          <span>✓</span>
-          <div><strong>Experiencia guiada:</strong> permite resaltar módulos clave como alertas, mapa, ayuda y chatbot.</div>
-        </div>
-      </div>
-    </div>
-
-    <div style="display:flex; justify-content:center;">
-      <div class="phone-frame">
-        <div class="phone-notch"></div>
-
-        <div class="phone-screen">
-          <div class="phone-carousel" id="phoneCarousel">
-            <img src="images/app-main.png" alt="Pantalla principal de LifeGuardAPP" class="phone-slide active" />
-            <img src="images/lucy-funciones.png" alt="Pantalla de funciones" class="phone-slide" />
-            <img src="images/emergency-scene.png" alt="Pantalla de emergencia" class="phone-slide" />
-            <img src="images/geolocalizacion.png" alt="Pantalla de geolocalización" class="phone-slide" />
-            <img src="images/chatbot-screen.png" alt="Pantalla del chatbot Lucy" class="phone-slide" />
-          </div>
-        </div>
-
-        <div class="phone-indicators">
-          <button class="phone-dot active" data-slide="0"></button>
-          <button class="phone-dot" data-slide="1"></button>
-          <button class="phone-dot" data-slide="2"></button>
-          <button class="phone-dot" data-slide="3"></button>
-          <button class="phone-dot" data-slide="4"></button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <h2>¿Por qué usar LifeGuardAPP?</h2>
-      <p>
-        LifeGuardAPP está pensada para ofrecer una experiencia útil, clara y confiable en momentos donde la comunicación,
-        la ubicación y la orientación pueden marcar una gran diferencia.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <article class="card">
-        <h4>Más tranquilidad para el usuario</h4>
-        <p>
-          La aplicación ayuda a mantener el acceso a información importante, orientación práctica y funciones clave
-          para actuar con mayor claridad ante situaciones de emergencia.
-        </p>
-      </article>
-
-      <article class="card">
-        <h4>Mejor conexión con familiares y contactos</h4>
-        <p>
-          Facilita compartir información útil y mantener una mejor coordinación con personas de confianza cuando
-          la situación requiere respuesta rápida.
-        </p>
-      </article>
-
-      <article class="card">
-        <h4>Experiencia clara y visual</h4>
-        <p>
-          Su diseño busca que el usuario entienda fácilmente qué hacer, dónde encontrar funciones importantes y cómo
-          aprovechar la aplicación de forma intuitiva.
-        </p>
-      </article>
-    </div>
-
-    <div class="grid-2" style="margin-top:18px;">
-      <div class="card">
-        <h4>Ideal para distintos contextos</h4>
-        <p>
-          LifeGuardAPP puede ser útil para personas, familias, comunidades, instituciones educativas, empresas
-          y otros entornos donde la preparación y la comunicación sean importantes.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Una propuesta con identidad propia</h4>
-        <p>
-          La presencia de Lucy como mascota guía ayuda a crear una experiencia más cercana, humana y memorable,
-          reforzando la identidad visual de la aplicación.
-        </p>
-      </div>
-    </div>
-
-    <div style="display:flex; justify-content:center; margin-top:26px;">
-      <div class="card" style="max-width:320px; width:100%; padding:16px;">
-        <div style="border-radius:24px; overflow:hidden; background: linear-gradient(135deg, rgba(196,239,87,0.18), rgba(255,182,93,0.18)); display:flex; align-items:center; justify-content:center; padding:20px; min-height:320px;">
-          <img
-            src="images/LucySentada.png"
-            alt="Lucy, mascota de LifeGuardAPP"
-            style="width:100%; max-width:240px; height:auto; object-fit:contain; display:block;"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  </main>
-
-  <section class="section">
-    <div class="container">
-      <div class="cta" style="align-items: start;">
+    <section class="section" id="contacto">
+      <div class="container cta">
         <div>
-          <div class="eyebrow">Lucy te ayuda</div>
-          <h2>¿Tienes preguntas sobre LifeGuardAPP? Pregúntale a Lucy, tu asistente guía.</h2>
-          <img src="images/lucyActually.png" style="height: 300px; margin-left: 200px; margin-bottom: -50px;" alt="">
+          <p class="eyebrow">Lucy te ayuda</p>
+          <h2>¿Tienes preguntas sobre LifeGuardAPP?</h2>
+          <p>Conversa con Lucy para resolver dudas frecuentes sobre el uso de la aplicación.</p>
+          <img src="images/lucyActually.png" class="cta-mascot" alt="Lucy, asistente virtual de LifeGuardAPP" />
         </div>
 
-        <div class="cta-box" style="padding:0; overflow:hidden;">
-          <div
-            style="padding:16px 18px; border-bottom:1px solid rgba(115,182,46,0.12); display:flex; align-items:center; gap:12px;">
-            <div>
-              <strong style="display:block; color:var(--green-700);">Lucy</strong>
-              <span style="color:var(--muted); font-size:.9rem;">Asistente de LifeGuardAPP</span>
-            </div>
-          </div>
+        <div class="chat-card" aria-label="Chatbot de preguntas frecuentes">
+          <header class="chat-header">
+            <strong>Lucy · Asistente LifeGuardAPP</strong>
+            <span>Respuestas rápidas sobre la app</span>
+          </header>
 
-          <div id="chatMessages"
-            style="padding:16px; display:grid; gap:12px; max-height:320px; overflow:auto; background:#fffefb;">
-            <div
-              style="justify-self:start; max-width:85%; background:rgba(196,239,87,0.18); color:var(--text); padding:12px 14px; border-radius:18px 18px 18px 6px; line-height:1.55;">
-              Hola. Soy Lucy, tu guía de LifeGuardAPP. Puedes preguntarme qué es la app, cómo funciona o cómo descargarla.
-            </div>
-          </div>
+          <div id="chatMessages" class="chat-messages" role="log" aria-live="polite"></div>
 
-          <div style="padding:14px; border-top:1px solid rgba(115,182,46,0.12); background:white;">
-            <div style="display:flex; gap:10px;">
-              <input id="chatInput" type="text" placeholder="Escribe una pregunta..."
-                style="flex:1; border:1px solid rgba(115,182,46,0.18); border-radius:14px; padding:14px 14px; font:inherit; outline:none;" />
-              <button id="chatSend" class="btn btn-primary" style="padding:14px 18px;">Enviar</button>
-            </div>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Qué es LifeGuardAPP</button>
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Cómo funciona</button>
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Cómo la descargo</button>
-            </div>
-          </div>
+          <div class="chat-quick-actions" id="chatQuickActions"></div>
+
+          <form class="chat-input-area" id="chatForm">
+            <label for="chatInput" class="sr-only">Escribe tu pregunta</label>
+            <input id="chatInput" type="text" placeholder="Ejemplo: ¿Funciona sin internet?" autocomplete="off" />
+            <button id="chatSend" class="btn btn-primary" type="submit">Enviar</button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <div class="container footer-row">
@@ -519,75 +267,7 @@
     </div>
   </footer>
 
-  <script>
-    const chatMessages = document.getElementById('chatMessages');
-    const chatInput = document.getElementById('chatInput');
-    const chatSend = document.getElementById('chatSend');
-    const quickButtons = document.querySelectorAll('.quick-question');
-
-    function addMessage(text, type = 'bot') {
-      const message = document.createElement('div');
-      message.style.maxWidth = '85%';
-      message.style.padding = '12px 14px';
-      message.style.lineHeight = '1.55';
-      message.style.borderRadius = type === 'user' ? '18px 18px 6px 18px' : '18px 18px 18px 6px';
-      message.style.justifySelf = type === 'user' ? 'end' : 'start';
-      message.style.background = type === 'user' ? 'rgba(255,182,93,0.24)' : 'rgba(196,239,87,0.18)';
-      message.style.color = 'var(--text)';
-      message.textContent = text;
-      chatMessages.appendChild(message);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function getLucyResponse(question) {
-      const q = question.toLowerCase();
-
-      if (q.includes('qué es') || q.includes('que es') || q.includes('qué hace') || q.includes('que hace')) {
-        return 'LifeGuardAPP es una aplicación móvil pensada para apoyar la comunicación, la localización y la orientación en situaciones de emergencia, antes, durante y después de un evento crítico.';
-      }
-      if (q.includes('cómo funciona') || q.includes('como funciona') || q.includes('funciona')) {
-        return 'LifeGuardAPP combina comunicación descentralizada, geolocalización, alertas verificadas y contenido educativo para ayudar a usuarios, familias y comunidades a actuar con mayor claridad y coordinación.';
-      }
-      if (q.includes('descargar') || q.includes('descarga') || q.includes('apk') || q.includes('instalar') || q.includes('descargo')) {
-        return 'En esta página puedes agregar un botón de descarga directa por APK. También puedes incluir instrucciones de instalación y, más adelante, enlaces oficiales a tiendas móviles.';
-      }
-      if (q.includes('alerta') || q.includes('alertas')) {
-        return 'La app contempla alertas con información validada para reducir desinformación y orientar mejor a las personas en momentos críticos.';
-      }
-      if (q.includes('ubicación') || q.includes('ubicacion') || q.includes('geolocalización') || q.includes('geolocalizacion')) {
-        return 'LifeGuardAPP contempla funciones de geolocalización para compartir ubicación útil y apoyar la coordinación con contactos o equipos de ayuda.';
-      }
-      if (q.includes('p2p') || q.includes('comunicación') || q.includes('comunicacion')) {
-        return 'Una de las ideas clave del proyecto es la comunicación descentralizada entre dispositivos cercanos, para disminuir la dependencia de redes tradicionales.';
-      }
-      return 'Puedo ayudarte con preguntas básicas sobre la app, como qué es, cómo funciona, cómo descargarla, sus alertas, la geolocalización o la comunicación descentralizada.';
-    }
-
-    function handleQuestion(text) {
-      if (!text.trim()) return;
-      addMessage(text, 'user');
-      const response = getLucyResponse(text);
-      setTimeout(() => addMessage(response, 'bot'), 300);
-    }
-
-    if (chatSend && chatInput && chatMessages) {
-      chatSend.addEventListener('click', () => {
-        handleQuestion(chatInput.value);
-        chatInput.value = '';
-      });
-
-      chatInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          handleQuestion(chatInput.value);
-          chatInput.value = '';
-        }
-      });
-
-      quickButtons.forEach((button) => {
-        button.addEventListener('click', () => handleQuestion(button.textContent));
-      });
-    }
-  </script>
+  <script src="app.js" defer></script>
 </body>
 
 </html>

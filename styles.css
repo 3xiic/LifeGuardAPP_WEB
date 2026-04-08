@@ -97,6 +97,7 @@ a { color: inherit; }
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
+  row-gap: 8px;
 }
 
 .nav-links a {
@@ -815,12 +816,33 @@ footer {
   .hero-grid, .grid-4, .grid-3, .grid-2, .cta, .highlight-grid, .hero-cards {
     grid-template-columns: 1fr;
   }
+  .hero {
+    padding-top: 24px;
+  }
+  .hero h1 {
+    max-width: 100%;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+  }
+  .hero-cards {
+    gap: 12px;
+  }
   .showcase-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
   .visual-shell { min-height: auto; }
-  .visual-stage { min-height: 500px; }
+  .visual-stage {
+    min-height: 460px;
+    padding: 20px;
+  }
+  .mascot-frame {
+    min-height: 360px;
+  }
+  .glow {
+    width: min(100%, 420px);
+    height: min(100%, 420px);
+  }
   .float-a, .float-b, .float-c {
     position: static;
     margin-top: 12px;
@@ -849,8 +871,8 @@ footer {
     font-size: 0.98rem;
     line-height: 1.64;
   }
-  .visual-stage { padding: 18px; min-height: 430px; }
-  .mascot-frame { min-height: 280px; }
+  .visual-stage { padding: 16px; min-height: 390px; }
+  .mascot-frame { min-height: 270px; }
   .visual-card { padding: 14px; }
   .nav {
     gap: 12px;
@@ -865,7 +887,7 @@ footer {
   .hero-actions .btn {
     width: auto;
     flex: 1;
-    min-width: 140px;
+    min-width: 132px;
   }
   .chatbox-input-row {
     flex-direction: column;
@@ -880,6 +902,29 @@ footer {
     height: 210px;
   }
   .card, .story, .metric-panel, .cta, .cta-box, .mini-card { padding: 18px; }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.06;
+  }
+  .hero p {
+    font-size: 0.94rem;
+  }
+  .nav-links {
+    gap: 6px;
+  }
+  .nav-links a {
+    font-size: 0.86rem;
+    padding: 8px 10px;
+  }
+  .visual-stage {
+    min-height: 340px;
+  }
+  .mascot-frame {
+    min-height: 220px;
+  }
 }
 .phone-frame {
   position: relative;

@@ -831,13 +831,22 @@ footer {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .visual-shell { min-height: auto; }
+  .visual-shell {
+    min-height: auto;
+    display: block;
+    padding: 8px 0 0;
+  }
   .visual-stage {
-    min-height: 460px;
+    min-height: 420px;
     padding: 20px;
+    overflow: hidden;
   }
   .mascot-frame {
-    min-height: 360px;
+    min-height: 320px;
+  }
+  .mascot-frame img {
+    max-height: 460px;
+    width: 100%;
   }
   .glow {
     width: min(100%, 420px);
@@ -846,7 +855,7 @@ footer {
   .float-a, .float-b, .float-c {
     position: static;
     margin-top: 12px;
-    max-width: none;
+    max-width: 100%;
   }
   .floating-card .bubble {
     border-radius: 20px;
@@ -871,8 +880,27 @@ footer {
     font-size: 0.98rem;
     line-height: 1.64;
   }
+  .topbar {
+    position: static;
+  }
+  .nav-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .nav-links a {
+    text-align: center;
+    width: 100%;
+  }
+  .nav-links .btn {
+    grid-column: 1 / -1;
+  }
   .visual-stage { padding: 16px; min-height: 390px; }
-  .mascot-frame { min-height: 270px; }
+  .mascot-frame { min-height: 250px; }
+  .mascot-frame img {
+    max-height: 360px;
+  }
   .visual-card { padding: 14px; }
   .nav {
     gap: 12px;
@@ -901,6 +929,9 @@ footer {
   .chat-lucy-image {
     height: 210px;
   }
+  .floating-card {
+    width: 100%;
+  }
   .card, .story, .metric-panel, .cta, .cta-box, .mini-card { padding: 18px; }
 }
 
@@ -912,18 +943,18 @@ footer {
   .hero p {
     font-size: 0.94rem;
   }
-  .nav-links {
-    gap: 6px;
-  }
   .nav-links a {
     font-size: 0.86rem;
-    padding: 8px 10px;
+    padding: 8px;
   }
   .visual-stage {
-    min-height: 340px;
+    min-height: 320px;
   }
   .mascot-frame {
-    min-height: 220px;
+    min-height: 210px;
+  }
+  .mascot-frame img {
+    max-height: 300px;
   }
 }
 .phone-frame {

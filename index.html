@@ -245,7 +245,7 @@
               <div><strong>En la dimensión cultural:</strong> adapta mensajes y protocolos a realidades y costumbres
                 locales.</div>
             </div>
-            <img src="images/LucyRiesgos.png" alt="Lucy, la luciérnaga guía de LifeGuardAPP, con un mensaje de valor" style="height: 300px; border-radius:18px; margin-left: 150px;" />
+            <img src="images/LucyRiesgos.png" alt="Lucy, la luciérnaga guía de LifeGuardAPP, con un mensaje de valor" class="lucy-side-image" />
           </div>
         </div>
       </div>
@@ -286,7 +286,7 @@
     <section class="section" id="descarga">
       <div class="container grid-2">
         <div class="card feature-hero">
-          <div class="section-header" style="text-align:left; margin-bottom:18px;">
+          <div class="section-header section-header-left compact-header">
             <h2>Descarga LifeGuardAPP</h2>
             <p>Accede a la aplicación y comienza a explorar una herramienta pensada para acompañarte con comunicación,
               localización y orientación en situaciones de emergencia.</p>
@@ -307,20 +307,20 @@
             </div>
           </div>
 
-          <div class="hero-actions" style="margin-top:22px;">
+          <div class="hero-actions download-actions">
             <a href="#" class="btn btn-primary">Descargar APK</a>
             <a href="#" class="btn btn-secondary">Ver instrucciones</a>
           </div>
         </div>
 
         <div class="metric-panel">
-          <div class="section-header" style="text-align:left; margin-bottom:8px;">
+          <div class="section-header section-header-left metric-header">
             <h2>¿Qué incluye la experiencia?</h2>
             <p>Una propuesta pensada para comunicar mejor el valor de la app y darle una identidad visual más memorable.
             </p>
           </div>
 
-          <div class="highlight-grid" style="grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: 8px;">
+          <div class="highlight-grid highlight-grid-compact">
             <div class="highlight">
               <strong>Comunicación P2P</strong>
               <span>Conexión entre dispositivos cercanos para momentos críticos.</span>
@@ -343,10 +343,10 @@
     </section>
 
    <section class="section">
-  <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
+  <div class="container showcase-grid">
     
     <div>
-      <div class="section-header" style="text-align:left; margin-bottom:18px;">
+      <div class="section-header section-header-left compact-header">
         <h2>Descubre LifeGuardAPP desde dentro</h2>
         <p>
           Explora algunas de las pantallas principales de la aplicación y conoce cómo LifeGuardAPP
@@ -371,7 +371,7 @@
       </div>
     </div>
 
-    <div style="display:flex; justify-content:center;">
+    <div class="phone-wrap">
       <div class="phone-frame">
         <div class="phone-notch"></div>
 
@@ -391,19 +391,13 @@
           </div>
         </div>
 
-        <div class="phone-indicators">
-          <button class="phone-dot active" data-slide="0"></button>
-          <button class="phone-dot" data-slide="1"></button>
-          <button class="phone-dot" data-slide="2"></button>
-          <button class="phone-dot" data-slide="3"></button>
-          <button class="phone-dot" data-slide="4"></button>
-        </div>
+        <div class="phone-indicators" id="phoneIndicators" aria-label="Indicadores del carrusel"></div>
+        <button class="phone-control phone-prev" id="phonePrev" aria-label="Captura anterior">‹</button>
+        <button class="phone-control phone-next" id="phoneNext" aria-label="Siguiente captura">›</button>
       </div>
     </div>
 
   </div>
-</section>
-
 </section>
 
 <section class="section">
@@ -442,7 +436,7 @@
       </article>
     </div>
 
-    <div class="grid-2" style="margin-top:18px;">
+    <div class="grid-2 why-grid">
       <div class="card">
         <h4>Ideal para distintos contextos</h4>
         <p>
@@ -460,13 +454,13 @@
       </div>
     </div>
 
-    <div style="display:flex; justify-content:center; margin-top:26px;">
-      <div class="card" style="max-width:320px; width:100%; padding:16px;">
-        <div style="border-radius:24px; overflow:hidden; background: linear-gradient(135deg, rgba(196,239,87,0.18), rgba(255,182,93,0.18)); display:flex; align-items:center; justify-content:center; padding:20px; min-height:320px;">
+    <div class="lucy-center-wrap">
+      <div class="card lucy-center-card">
+        <div class="lucy-center-inner">
           <img
             src="images/LucySentada.png"
             alt="Lucy, mascota de LifeGuardAPP"
-            style="width:100%; max-width:240px; height:auto; object-fit:contain; display:block;"
+            class="lucy-center-image"
           />
         </div>
       </div>
@@ -477,40 +471,38 @@
 
   <section class="section">
     <div class="container">
-      <div class="cta" style="align-items: start;">
+      <div class="cta cta-chat">
         <div>
           <div class="eyebrow">Lucy te ayuda</div>
           <h2>¿Tienes preguntas sobre LifeGuardAPP? Pregúntale a Lucy, tu asistente guía.</h2>
-          <img src="images/lucyActually.png" style="height: 300px; margin-left: 200px; margin-bottom: -50px;" alt="">
+          <img src="images/lucyActually.png" class="chat-lucy-image" alt="Lucy acompañando la sección de preguntas frecuentes">
         </div>
 
-        <div class="cta-box" style="padding:0; overflow:hidden;">
-          <div
-            style="padding:16px 18px; border-bottom:1px solid rgba(115,182,46,0.12); display:flex; align-items:center; gap:12px;">
+        <div class="cta-box chatbox">
+          <div class="chatbox-header">
             <div>
-              <strong style="display:block; color:var(--green-700);">Lucy</strong>
-              <span style="color:var(--muted); font-size:.9rem;">Asistente de LifeGuardAPP</span>
+              <strong>Lucy</strong>
+              <span>Asistente de LifeGuardAPP</span>
             </div>
           </div>
 
-          <div id="chatMessages"
-            style="padding:16px; display:grid; gap:12px; max-height:320px; overflow:auto; background:#fffefb;">
-            <div
-              style="justify-self:start; max-width:85%; background:rgba(196,239,87,0.18); color:var(--text); padding:12px 14px; border-radius:18px 18px 18px 6px; line-height:1.55;">
+          <div id="chatMessages" class="chat-messages">
+            <div class="chat-message chat-message-bot">
               Hola. Soy Lucy, tu guía de LifeGuardAPP. Puedes preguntarme qué es la app, cómo funciona o cómo descargarla.
             </div>
           </div>
 
-          <div style="padding:14px; border-top:1px solid rgba(115,182,46,0.12); background:white;">
-            <div style="display:flex; gap:10px;">
-              <input id="chatInput" type="text" placeholder="Escribe una pregunta..."
-                style="flex:1; border:1px solid rgba(115,182,46,0.18); border-radius:14px; padding:14px 14px; font:inherit; outline:none;" />
-              <button id="chatSend" class="btn btn-primary" style="padding:14px 18px;">Enviar</button>
+          <div class="chatbox-controls">
+            <div class="chatbox-input-row">
+              <input id="chatInput" type="text" placeholder="Escribe una pregunta..." />
+              <button id="chatSend" class="btn btn-primary">Enviar</button>
             </div>
-            <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Qué es LifeGuardAPP</button>
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Cómo funciona</button>
-              <button class="quick-question btn btn-secondary" style="padding:10px 14px;">Cómo la descargo</button>
+            <div class="chat-quick-actions">
+              <button class="quick-question btn btn-secondary">Qué es LifeGuardAPP</button>
+              <button class="quick-question btn btn-secondary">Cómo funciona</button>
+              <button class="quick-question btn btn-secondary">Cómo la descargo</button>
+              <button class="quick-question btn btn-secondary">Funciona sin internet</button>
+              <button class="quick-question btn btn-secondary">Quiénes pueden usarla</button>
             </div>
           </div>
         </div>
@@ -530,16 +522,17 @@
     const chatInput = document.getElementById('chatInput');
     const chatSend = document.getElementById('chatSend');
     const quickButtons = document.querySelectorAll('.quick-question');
+    const phoneCarousel = document.getElementById('phoneCarousel');
+    const phoneIndicators = document.getElementById('phoneIndicators');
+    const phonePrev = document.getElementById('phonePrev');
+    const phoneNext = document.getElementById('phoneNext');
+    const phoneSlides = phoneCarousel ? Array.from(phoneCarousel.querySelectorAll('.phone-slide')) : [];
+    let phoneCurrent = 0;
+    let phoneTimer;
 
     function addMessage(text, type = 'bot') {
       const message = document.createElement('div');
-      message.style.maxWidth = '85%';
-      message.style.padding = '12px 14px';
-      message.style.lineHeight = '1.55';
-      message.style.borderRadius = type === 'user' ? '18px 18px 6px 18px' : '18px 18px 18px 6px';
-      message.style.justifySelf = type === 'user' ? 'end' : 'start';
-      message.style.background = type === 'user' ? 'rgba(255,182,93,0.24)' : 'rgba(196,239,87,0.18)';
-      message.style.color = 'var(--text)';
+      message.className = `chat-message ${type === 'user' ? 'chat-message-user' : 'chat-message-bot'}`;
       message.textContent = text;
       chatMessages.appendChild(message);
       chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -566,7 +559,19 @@
       if (q.includes('p2p') || q.includes('comunicación') || q.includes('comunicacion')) {
         return 'Una de las ideas clave del proyecto es la comunicación descentralizada entre dispositivos cercanos, para disminuir la dependencia de redes tradicionales.';
       }
-      return 'Puedo ayudarte con preguntas básicas sobre la app, como qué es, cómo funciona, cómo descargarla, sus alertas, la geolocalización o la comunicación descentralizada.';
+      if (q.includes('sin internet') || q.includes('offline') || q.includes('sin conexión') || q.includes('sin conexion')) {
+        return 'LifeGuardAPP está pensada para mantener funciones útiles incluso cuando hay conectividad limitada. La comunicación P2P y la información almacenada localmente ayudan a operar en escenarios sin Internet estable.';
+      }
+      if (q.includes('quién') || q.includes('quien') || q.includes('para quién') || q.includes('para quien') || q.includes('usuarios')) {
+        return 'La app puede ser utilizada por personas, familias, comunidades y también por equipos de apoyo que necesiten mejor coordinación durante emergencias.';
+      }
+      if (q.includes('beneficio') || q.includes('ventaja')) {
+        return 'Los beneficios principales son: mejorar la coordinación, compartir ubicación útil, recibir alertas orientadas y contar con una guía clara para actuar antes, durante y después de la emergencia.';
+      }
+      if (q.includes('ayuda') || q.includes('soporte') || q.includes('contacto')) {
+        return 'Si necesitas ayuda, puedes usar esta sección de preguntas frecuentes y también habilitar un canal de soporte en la app o correo de contacto para atención personalizada.';
+      }
+      return 'Puedo ayudarte con preguntas sobre qué es LifeGuardAPP, cómo funciona, descarga, geolocalización, alertas, comunicación P2P, uso sin Internet, beneficios y soporte.';
     }
 
     function handleQuestion(text) {
@@ -592,6 +597,59 @@
       quickButtons.forEach((button) => {
         button.addEventListener('click', () => handleQuestion(button.textContent));
       });
+    }
+
+    function createPhoneDots() {
+      if (!phoneIndicators || phoneSlides.length === 0) return;
+      phoneIndicators.innerHTML = '';
+      phoneSlides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `phone-dot ${idx === 0 ? 'active' : ''}`;
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Ir a la captura ${idx + 1}`);
+        dot.addEventListener('click', () => showPhoneSlide(idx));
+        phoneIndicators.appendChild(dot);
+      });
+    }
+
+    function showPhoneSlide(index) {
+      if (phoneSlides.length === 0) return;
+      phoneCurrent = (index + phoneSlides.length) % phoneSlides.length;
+      phoneSlides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === phoneCurrent);
+      });
+      const dots = phoneIndicators ? phoneIndicators.querySelectorAll('.phone-dot') : [];
+      dots.forEach((dot, idx) => dot.classList.toggle('active', idx === phoneCurrent));
+    }
+
+    function startPhoneAutoplay() {
+      if (phoneSlides.length <= 1) return;
+      clearInterval(phoneTimer);
+      phoneTimer = setInterval(() => {
+        showPhoneSlide(phoneCurrent + 1);
+      }, 3200);
+    }
+
+    if (phoneSlides.length > 0) {
+      createPhoneDots();
+      showPhoneSlide(0);
+      startPhoneAutoplay();
+      if (phonePrev) {
+        phonePrev.addEventListener('click', () => {
+          showPhoneSlide(phoneCurrent - 1);
+          startPhoneAutoplay();
+        });
+      }
+      if (phoneNext) {
+        phoneNext.addEventListener('click', () => {
+          showPhoneSlide(phoneCurrent + 1);
+          startPhoneAutoplay();
+        });
+      }
+      if (phoneCarousel) {
+        phoneCarousel.addEventListener('mouseenter', () => clearInterval(phoneTimer));
+        phoneCarousel.addEventListener('mouseleave', startPhoneAutoplay);
+      }
     }
   </script>
 </body>
